@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="no-js"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Morse Code Translator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Pattaya" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    
+</style>
+    </head>
+    <body>
+        <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+            <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+            <a href="./index.html" class="w3-bar-item w3-button">Home</a>
+            <a href="english.html" class="w3-bar-item w3-button">English</a>
+            <a href="./arabic.html" class="w3-bar-item w3-button">Arabic</a>
+            <a href="./about.html" class="w3-bar-item w3-button">About</a>
+
+          </div>
+          
+          <div class="w3-teal">
+            <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+            <div class="w3-container">
+              <h1>OnTheGo Morse Code</h1>
+            </div>
+          </div>
+          
+          
+          
+          <div class="w3-container">
+          
+          </div>
+          
+          <script>
+          function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+          }
+          
+          function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+          }
+          </script>
+               
+        <section id="translator">
+            <h1>Morse Code Translator</h1>
+            <div id="translator__english" class="translator__section">
+                <label for="translator__english--text">Type in English here...</label>
+                <textarea placeholder="For morse code use '.' for dots, '-' for dashes, separate letters with a space & signify a space by typing '|' e.g. .... .. | - .... . .-. . would translate to 'Hi there'" name="english" id="translator__english--text" cols="30" rows="10"></textarea>
+            </div>
+            <div id="translator__morse" class="translator__section hide">
+                <label for="translator__morse--text">Type in Morse Code here...</label>
+                <textarea placeholder="For morse code use '.' for dots, '-' for dashes, separate letters with a space & signify a space by typing '|' e.g. .... .. | - .... . .-. . would translate to 'Hi there'" name="morse" id="translator__morse--text" cols="30" rows="10"></textarea>
+            </div>
+            <button>Switch to Morse <i class="fas fa-exchange-alt"></i></button>
+
+            <div id="translator__result" class="translator__section">
+                <label for="translator__result--text">Translation</label>
+                <textarea disabled name="result" id="translator__result--text" cols="30" rows="10"></textarea>
+            </div>
+        </section>
+        
+        <script src="dist/main.js"></script>
+    </body>
+</html>

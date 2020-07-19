@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Arabic</title>
+    <style>
+        body {background-color: black;}
+        .img {display: inline-block;}
+        .img2 {display: inline-block;}
+        h1 {color: white;}
+        .click {text-align: center; color: white; font-size: large;} 
+        
+div.content {
+  margin-left: 100px;
+  padding: 1px 16px;
+  height: 1000px;text-align: right;
+}
+    </style>
+</head>
+<body>
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large"
+        onclick="w3_close()">Close &times;</button>
+        <a href="./index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="./english.html" class="w3-bar-item w3-button">English</a>
+        <a href="./arabic.html" class="w3-bar-item w3-button">Arabic</a>
+        <a href="./about.html" class="w3-bar-item w3-button">About</a>
+
+    </div>
+    
+    <div id="main">
+        
+        <div class="w3-teal">
+            <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+            <div class="w3-container">
+                <h1>Arabic</h1>
+            </div>
+        </div>
+        
+        
+        <div class="content">
+        <div class="w3-container">
+      <div class="img">
+<a href="https://youtu.be/Fgjwomx5WSE">
+    <img src="./default.jpg" width="300" height="200">
+</a>
+</div>
+<div class="img2">
+    <a href="https://youtu.be/LaibTbluuY8">
+            <img src="./mqdefault_6s.webp" width="700" height="300">
+        </a>
+    </div>
+    <h1>
+        شفرة مورس هي شفرة حرفية من اجل إرسال المعلومات التلغرافية، باستخدام تتابعات قياسية من عناصر طويلة وقصيرة تعبر عن الحروف والارقام والعلامات والحروف الخاصة الموجودة في الرسالة. العناصر الطويلة والقصيرة من الممكن ان يتم تكوينها عن طريق صوت، علامات أو فتح وغلق المفاتح وهما مشهورين على انهم نقاط وعلامات مائلة.
+        
+        صنعها صمويل مورس في بدايات 1840، استخدمت شفرة مورس أيضا في اتصال الراديو في باديات 1890. من اجل النصف الأول من القرن العشرين، الغالبية من الاتصالات عالمية عالية السرعة استخدم فيها شفرة مورس, بإٍستخدام خطوط التليفون, كابلات بحرية, ودوائر الراديو. على أي حال, الطول المتغير لحروف مورس جعلها صعبة لكى تكون اوتوماتيكية الدوائر أو أن تكون الكترونية.
+        
+            الاستخدام الاوسع لشفرة مورس هذه الايام هو مشغلون الراديو الهواة, مع انه أصبح غير مطلوبا من اجل رخصة الهواة في الكثير من الدول. واستمر أيضا لكى يصبح مفيدا من اجل اهداف أخرى, يتضمن ذلك تعريف الاذاعة الملاحية والناقلين الأرضيين للموبايل. تم تصميم شفرة مورس من اجل قراءتها عن طريق الإنسان وليس باستخدام جهاز لفك الشفرة, لكتى تصبح مفيدة في إرسال البيانات الاوتوماتيكية الرقمية عن طريق قنوات صوتية. من اجل الرسائل العاجلة, من الممكن إرسال شفرة مورس عن طريق مصادر مرتجلة وهذا بسهولة من الممكن ان يكون عن طريق ان يكون المفتاح مغلقا أو مفتوحاً.
+            
+            
+        </h1>
+        
+    </div>
+    
+</div>
+</div>
+  
+  <script>
+      function w3_open() {
+          document.getElementById("main").style.marginLeft = "25%";
+          document.getElementById("mySidebar").style.width = "25%";
+          document.getElementById("mySidebar").style.display = "block";
+          document.getElementById("openNav").style.display = 'none';
+        }
+        function w3_close() {
+            document.getElementById("main").style.marginLeft = "0%";
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("openNav").style.display = "inline-block";
+        }
+        </script>
+</body>
+</html>

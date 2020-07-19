@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>About</title>
+    <style>
+        .img {display: inline-block;}
+        .img2 {display: inline-block;}
+        h1 {color: white;}
+        .click {text-align: center; color: white; font-size: large;} 
+        div.content {
+  margin-left: 100px;
+  padding: 1px 16px;
+  height: 1000px;}
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+    </style>
+</head>
+<body>
+    
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-large"
+    onclick="w3_close()">Close &times;</button>
+    <a href="./index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="#" class="w3-bar-item w3-button">English</a>
+    <a href="./arabic.html" class="w3-bar-item w3-button">Arabic</a>
+    <a href="./about.html" class="w3-bar-item w3-button">About</a>
+
+  </div>
+  
+  <div id="main">
+  
+  <div class="w3-teal">
+    <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+    <div class="w3-container">
+      <h1>About</h1>
+    </div>
+  </div>
+  
+  <div class="content">
+      <div class="w3-container">
+        
+        <img src="Annotation 2020-07-19 173601.png"class="center">
+     
+
+  </div>
+</div>
+  
+</div>
+
+  <script>
+  function w3_open() {
+    document.getElementById("main").style.marginLeft = "25%";
+    document.getElementById("mySidebar").style.width = "25%";
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("openNav").style.display = 'none';
+  }
+  function w3_close() {
+    document.getElementById("main").style.marginLeft = "0%";
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("openNav").style.display = "inline-block";
+  }
+  </script>
+</body>
+</html>
